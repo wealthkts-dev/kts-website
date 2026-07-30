@@ -1,0 +1,234 @@
+/* Educational page CSS - corresponds to educational.html */
+/* This file replaces the missing educational.css */
+
+:root {
+    --deep-navy: #0a1628;
+    --navy: #0f1f3d;
+    --royal-blue: #1a3a6b;
+    --gold: #c8963e;
+    --gold-light: #d4a853;
+    --gold-bright: #e8b95b;
+    --cream: #f8f5f0;
+    --white: #ffffff;
+    --light-gray: #f4f4f5;
+    --text-dark: #1a1a2e;
+    --text-muted: #5a5f6b;
+    --soft-border: #e8e5df;
+    --success-green: #2d8a56;
+    --shadow-sm: 0 2px 8px rgba(10, 22, 40, 0.06);
+    --shadow-md: 0 4px 20px rgba(10, 22, 40, 0.10);
+    --shadow-lg: 0 8px 40px rgba(10, 22, 40, 0.14);
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 20px;
+    --transition: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    --bounce: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: var(--white);
+    color: var(--text-dark);
+    line-height: 1.65;
+    overflow-x: hidden;
+}
+
+/* Navigation - consistent with index.html */
+.navbar {
+    background: var(--white);
+    box-shadow: var(--shadow-sm);
+    padding: 10px 0;
+    transition: all var(--transition);
+    z-index: 1050;
+    border-bottom: 1px solid transparent;
+}
+.navbar.scrolled {
+    box-shadow: var(--shadow-md);
+    border-bottom: 1px solid var(--soft-border);
+    padding: 6px 0;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', 'Inter', serif;
+    font-weight: 800;
+    font-size: 1.65rem;
+    color: var(--deep-navy) !important;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.navbar-brand .brand-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-bright) 100%);
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--deep-navy);
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+.navbar .nav-link {
+    font-weight: 500;
+    font-size: 0.92rem;
+    color: var(--text-dark) !important;
+    padding: 0.5rem 1rem !important;
+    margin: 0 3px;
+    border-radius: 6px;
+    transition: all var(--transition);
+    position: relative;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--gold) !important;
+    background: rgba(200, 150, 62, 0.06);
+}
+
+.navbar .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 3px;
+    background: var(--gold);
+    border-radius: 3px;
+}
+
+.navbar-phone {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--deep-navy) !important;
+    background: var(--cream);
+    padding: 0.5rem 1.1rem !important;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    white-space: nowrap;
+}
+
+.navbar-phone:hover {
+    background: #efe9db;
+    color: var(--gold) !important;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Header section */
+.page-header {
+    background: linear-gradient(160deg, #fafaf8 0%, #f3efe7 40%, #eae3d5 100%);
+    padding: 110px 0 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: rgba(26, 58, 107, 0.04);
+    pointer-events: none;
+}
+
+.page-header::after {
+    content: '';
+    position: absolute;
+    bottom: -80px;
+    left: -80px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(200, 150, 62, 0.06);
+    pointer-events: none;
+}
+
+.page-header .section-pill {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+    background: rgba(200, 150, 62, 0.08);
+    padding: 6px 16px;
+    border-radius: 50px;
+}
+
+.page-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    color: var(--deep-navy);
+    letter-spacing: -0.5px;
+    margin-bottom: 15px;
+}
+
+.page-header .lead {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    max-width: 650px;
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer-section {
+    background: var(--cream);
+    padding: 40px 0 20px;
+    border-top: 1px solid var(--soft-border);
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 991.98px) {
+    .page-header {
+        padding: 90px 0 50px;
+        text-align: center;
+    }
+    
+    .page-header .lead {
+        margin: 0 auto;
+    }
+    
+    .navbar-collapse {
+        background: var(--white);
+        border-radius: var(--radius-md);
+        padding: 16px;
+        box-shadow: var(--shadow-lg);
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+    
+    .navbar-brand .brand-icon {
+        width: 34px;
+        height: 34px;
+        font-size: 0.9rem;
+    }
+}

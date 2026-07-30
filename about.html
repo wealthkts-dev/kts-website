@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | KTS Wealth - Building Financial Freedom</title>
+    <meta name="description" content="Learn about KTS Wealth's mission to provide honest financial guidance to lower middle class and rural communities across India. 15+ years of trusted service.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ktswealth.com/about.html">
+    <!-- Open Graph -->
+    <meta property="og:title" content="About Us | KTS Wealth - Building Financial Freedom">
+    <meta property="og:description" content="Learn about KTS Wealth's mission to provide honest financial guidance to lower middle class and rural communities across India.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ktswealth.com/about.html">
+    <meta property="og:locale" content="en_IN">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://use.fontawesome.com">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome (deferred, non-render-blocking) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css"></noscript>
+    <link rel="stylesheet" href="css/index.css">
+
+    <style>
+         :root {
+            --deep-navy: #0a1628;
+            --navy: #0f1f3d;
+            --royal-blue: #1a3a6b;
+            --gold: #c8963e;
+            --gold-light: #d4a853;
+            --gold-bright: #e8b95b;
+            --cream: #f8f5f0;
+            --white: #ffffff;
+            --light-gray: #f4f4f5;
+            --text-dark: #1a1a2e;
+            --text-muted: #5a5f6b;
+            --soft-border: #e8e5df;
+            --success-green: #2d8a56;
+            --shadow-sm: 0 2px 8px rgba(10, 22, 40, 0.06);
+            --shadow-md: 0 4px 20px rgba(10, 22, 40, 0.10);
+            --shadow-lg: 0 8px 40px rgba(10, 22, 40, 0.14);
+            --shadow-xl: 0 16px 60px rgba(10, 22, 40, 0.18);
+            --radius-sm: 8px;
+            --radius-md: 14px;
+            --radius-lg: 20px;
+            --radius-xl: 28px;
+            --transition: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+            --bounce: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--white);
+            color: var(--text-dark);
+            line-height: 1.65;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* ========== NAVBAR ========== */
+        
+        .navbar {
+            background: var(--white);
+            box-shadow: var(--shadow-sm);
+            padding: 10px 0;
+            transition: all var(--transition);
+            z-index: 1050;
+            border-bottom: 1px solid transparent;
+        }
+        
+        .navbar.scrolled {
+            box-shadow: var(--shadow-md);
+            border-bottom: 1px solid var(--soft-border);
+            padding: 6px 0;
+        }
+        
+        .navbar-brand {
+            font-family: 'Playfair Display', 'Inter', serif;
+            font-weight: 800;
+            font-size: 1.65rem;
+            letter-spacing: -0.3px;
+            color: var(--deep-navy) !important;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .navbar-brand .brand-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-bright) 100%);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--deep-navy);
+            font-weight: 900;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+            box-shadow: 0 3px 12px rgba(200, 150, 62, 0.3);
+        }
+        
+        .navbar-brand .brand-text {
+            line-height: 1.15;
+        }
+        
+        .navbar-brand .brand-text .brand-name {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        
+        .navbar-brand .brand-text .brand-sub {
+            font-size: 0.58rem;
+            font-weight: 600;
+            letter-spacing: 3.5px;
+            text-transform: uppercase;
+            color: var(--gold);
+            font-family: 'Inter', sans-serif;
+            display: block;
+            margin-top: -2px;
+        }
+        
+        .navbar .nav-link {
+            font-weight: 500;
+            font-size: 0.92rem;
+            color: var(--text-dark) !important;
+            padding: 0.5rem 1rem !important;
+            margin: 0 3px;
+            border-radius: 6px;
+            transition: all var(--transition);
+            position: relative;
+            letter-spacing: 0.2px;
+        }
+        
+        .navbar .nav-link:hover,
+        .navbar .nav-link.active {
+            color: var(--gold) !important;
+            background: rgba(200, 150, 62, 0.06);
+        }
+        
+        .navbar .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 3px;
+            background: var(--gold);
+            border-radius: 3px;
+        }
+        
+        .navbar-phone {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--deep-navy) !important;
+            background: var(--cream);
+            padding: 0.5rem 1.1rem !important;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            white-space: nowrap;
+        }
+        
+        .navbar-phone:hover {
+            background: #efe9db;
+            color: var(--gold) !important;
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .navbar-phone i {
+            color: var(--success-green);
+            font-size: 1rem;
+        }
+        
+        .navbar-toggler {
+            border: none;
+            padding: 8px 10px;
+            border-radius: var(--radius-sm);
+            background: var(--cream);
+            transition: var(--transition);
+        }
+        
+        .navbar-toggler:focus {
+            box-shadow: 0 0 0 3px rgba(200, 150, 62, 0.25);
+            outline: none;
+        }
+        /* ========== PAGE HEADER ========== */
+        
+        .page-header {
+            background: linear-gradient(160deg, #fafaf8 0%, #f3efe7 40%, #eae3d5 100%);
+            padding: 110px 0 70px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background: rgba(26, 58, 107, 0.04);
+            pointer-events: none;
+        }
+        
+        .page-header::after {
+            content: '';
+            position: absolute;
+            bottom: -80px;
+            left: -80px;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: rgba(200, 150, 62, 0.06);
+            pointer-events: none;
+        }
+        
+        .page-header .section-pill {
+            display: inline-block;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 12px;
+        }
+        
+        .page-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 800;
+            font-size: clamp(2.2rem, 5vw, 3.2rem);
+            color: var(--deep-navy);
+            letter-spacing: -0.5px;
+            margin-bottom: 15px;
+        }
+        
+        .page-header .lead {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 650px;
+            line-height: 1.6;
+        }
+        
+        .btn-gold {
+            background: linear-gradient(135deg, var(--gold) 0%, #d4a040 100%);
+            color: var(--deep-navy);
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 14px 30px;
+            border-radius: 50px;
+            border: none;
+            letter-spacing: 0.3px;
+            transition: all var(--bounce);
+            box-shadow: 0 6px 22px rgba(200, 150, 62, 0.35);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .btn-gold:hover {
+            background: linear-gradient(135deg, #d4a040 0%, #c8963e 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(200, 150, 62, 0.45);
+            color: var(--deep-navy);
+        }
+        /* ========== MISSION SECTION ========== */
+        
+        .mission-section {
+            background: var(--white);
+            padding: 80px 0;
+        }
+        
+        .mission-card {
+            background: var(--cream);
+            border-radius: var(--radius-xl);
+            padding: 40px 30px;
+            height: 100%;
+            border: 1px solid var(--soft-border);
+            transition: var(--transition);
+        }
+        
+        .mission-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+        }
+        
+        .mission-icon {
+            width: 64px;
+            height: 64px;
+            background: var(--white);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 800;
+            font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+            color: var(--deep-navy);
+            letter-spacing: -0.4px;
+            margin-bottom: 14px;
+        }
+        
+        .section-desc {
+            color: var(--text-muted);
+            font-size: 1.02rem;
+            line-height: 1.7;
+        }
+        /* ========== SERVICES LIST ========== */
+        
+        .services-list-section {
+            background: var(--white);
+            padding: 60px 0 80px;
+        }
+        
+        .service-list-card {
+            background: var(--white);
+            border: 1px solid var(--soft-border);
+            border-radius: var(--radius-lg);
+            padding: 30px 24px;
+            height: 100%;
+            transition: all var(--bounce);
+        }
+        
+        .service-list-card:hover {
+            box-shadow: var(--shadow-xl);
+            border-color: transparent;
+            transform: translateY(-6px);
+        }
+        
+        .service-list-card h5 {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--deep-navy);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .service-list-card h5 i {
+            color: var(--gold);
+            font-size: 1.5rem;
+        }
+        
+        .service-list-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .service-list-card ul li {
+            padding: 10px 0;
+            border-bottom: 1px dashed var(--soft-border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+        }
+        
+        .service-list-card ul li:last-child {
+            border-bottom: none;
+        }
+        
+        .service-list-card ul li i {
+            color: var(--success-green);
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+        /* ========== CTA BANNER ========== */
+        
+        .cta-banner {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, #0d1f3f 40%, var(--royal-blue) 100%);
+            padding: 60px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-banner h2 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 800;
+            color: var(--white);
+            letter-spacing: -0.3px;
+        }
+        
+        .cta-banner p {
+            color: rgba(255, 255, 255, 0.75);
+        }
+        
+        .btn-cta-gold {
+            background: linear-gradient(135deg, var(--gold-bright) 0%, var(--gold) 100%);
+            color: var(--deep-navy);
+            font-weight: 700;
+            padding: 14px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all var(--bounce);
+            box-shadow: 0 8px 28px rgba(200, 150, 62, 0.4);
+        }
+        
+        .btn-cta-gold:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 36px rgba(200, 150, 62, 0.55);
+            color: var(--deep-navy);
+        }
+        /* ========== MODAL ========== */
+        
+        .modal-content {
+            border-radius: var(--radius-lg);
+            border: none;
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .modal-header {
+            border-bottom: 1px solid var(--soft-border);
+            padding: 20px 24px;
+        }
+        
+        .modal-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--deep-navy);
+        }
+        
+        .form-control {
+            border-radius: var(--radius-sm);
+            border: 1.5px solid var(--soft-border);
+            padding: 12px 16px;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+        
+        .form-control:focus {
+            border-color: var(--gold);
+            box-shadow: 0 0 0 4px rgba(200, 150, 62, 0.1);
+            outline: none;
+        }
+        
+        .btn-submit {
+            background: linear-gradient(135deg, var(--gold) 0%, #d4a040 100%);
+            color: var(--deep-navy);
+            font-weight: 700;
+            border: none;
+            padding: 13px 28px;
+            border-radius: 50px;
+            letter-spacing: 0.3px;
+            transition: all var(--bounce);
+            box-shadow: 0 6px 22px rgba(200, 150, 62, 0.35);
+            width: 100%;
+        }
+        
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(200, 150, 62, 0.5);
+        }
+        
+        @media (max-width: 991.98px) {
+            .page-header {
+                padding: 90px 0 50px;
+                text-align: center;
+            }
+            .page-header .lead {
+                margin: 0 auto;
+            }
+            .navbar-collapse {
+                background: var(--white);
+                border-radius: var(--radius-md);
+                padding: 16px;
+                box-shadow: var(--shadow-lg);
+                margin-top: 8px;
+            }
+        }
+        
+        @media (max-width: 575.98px) {
+            .navbar-brand {
+                font-size: 1.3rem;
+            }
+            .navbar-brand .brand-icon {
+                width: 34px;
+                height: 34px;
+                font-size: 0.9rem;
+            }
+            .btn-gold,
+            .btn-cta-gold {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div class="brand-icon">KTS</div>
+                <div class="brand-text">
+                    <span class="brand-name">KTS WEALTH</span>
+                    <span class="brand-sub">Financial Services</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#investment">Investment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                </ul>
+                <a href="tel:8050447427" class="navbar-phone">
+                    <i class="bi bi-telephone-fill"></i> 8050447427
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== PAGE HEADER ==================== -->
+    <section class="page-header">
+        <div class="container position-relative" style="z-index:2;">
+            <span class="section-pill">About Us</span>
+            <h1>Our Story &amp; Purpose</h1>
+            <p class="lead">Welcome to KTS Wealth, your trusted partner in building a secure financial future for middle-class families and rural communities.</p>
+            <div class="mt-4">
+                <a href="#" class="btn-gold" data-bs-toggle="modal" data-bs-target="#consultationModal">
+                    <i class="bi bi-calendar-check"></i> Book Free Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== MISSION SECTION ==================== -->
+    <section class="mission-section" id="mission">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="section-pill">KTS WEALTH</span>
+                    <h2 class="section-title">Our Mission</h2>
+                    <p class="section-desc">To help families achieve financial stability through smart investment strategies and long‑term planning. We believe that everyone, regardless of income or background, deserves access to honest and effective financial guidance.</p>
+                    <div class="mt-4">
+                        <div class="d-flex align-items-center gap-3 flex-wrap">
+                            <div class="hero-trust-item d-flex align-items-center gap-2" style="font-size:0.9rem; color:var(--text-muted);">
+                                <i class="bi bi-shield-check" style="color:var(--success-green); font-size:1.3rem;"></i> SEBI Registered
+                            </div>
+                            <div class="hero-trust-item d-flex align-items-center gap-2" style="font-size:0.9rem; color:var(--text-muted);">
+                                <i class="bi bi-people-fill" style="color:var(--gold); font-size:1.3rem;"></i> 15+ Years Experience
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <i class="bi bi-bullseye"></i>
+                        </div>
+                        <h4 style="font-weight:700; color:var(--deep-navy);">Financial Stability for All</h4>
+                        <p style="color:var(--text-muted); margin-bottom:0;">We specialize in serving lower middle class and rural communities, offering products and advice that are practical, affordable, and aligned with your life goals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES LIST SECTION ==================== -->
+    <section class="services-list-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-pill">What We Do</span>
+                <h2 class="section-title">Tailored Financial Solutions</h2>
+                <p class="section-desc mx-auto" style="max-width:600px;">Explore the core services that have already helped thousands of families across India.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Mutual Funds Column -->
+                <div class="col-md-6">
+                    <div class="service-list-card">
+                        <h5><i class="bi bi-graph-up-arrow"></i> Mutual Funds</h5>
+                        <ul>
+                            <li><i class="bi bi-check-circle-fill"></i> SIP Investment</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Goal Based Investing</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Child Education Plan</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Insurance Planning Column -->
+                <div class="col-md-6">
+                    <div class="service-list-card">
+                        <h5><i class="bi bi-shield-check"></i> Insurance Planning</h5>
+                        <ul>
+                            <li><i class="bi bi-check-circle-fill"></i> Life Insurance</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Health Insurance</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Term Insurance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="cta-banner text-center">
+        <div class="container">
+            <h2>Ready to Start Your Financial Journey?</h2>
+            <p class="mb-4 mt-2">Speak with our experts today — it's free and without obligation.</p>
+            <a href="#" class="btn-cta-gold" data-bs-toggle="modal" data-bs-target="#consultationModal">
+                <i class="bi bi-calendar-check"></i> Book Free Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row gy-5 justify-content-between">
+
+                <!-- Brand -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">KTS WEALTH</div>
+
+                    <p class="footer-tagline">
+                        Building Financial Freedom for Every Family
+                    </p>
+
+                    <p style="font-size:0.85rem;color:var(--text-muted);">
+                        <i class="bi bi-geo-alt-fill me-1"></i> Serving families across India — rural, semi-urban &amp; beyond.
+                    </p>
+
+                    <a href="tel:8050447427" style="color:var(--gold);font-weight:700;text-decoration:none;font-size:1rem;">
+                        <i class="bi bi-telephone-fill me-1"></i> 8050447427
+                    </a>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-heading">Quick Links</h6>
+
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="services.html" class="footer-link">Services</a>
+                    <a href="index.html#investment" class="footer-link">Investment</a>
+                    <a href="educational.html" class="footer-link">Education</a>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-heading">Services</h6>
+
+                    <a href="#" class="footer-link">Mutual Funds</a>
+                    <a href="#" class="footer-link">Insurance Plans</a>
+                    <a href="#" class="footer-link">Workshops</a>
+                    <a href="#" class="footer-link">Retirement</a>
+
+                    <a href="#" class="footer-link" data-bs-toggle="modal" data-bs-target="#consultationModal">
+                    Consultation
+                </a>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-lg-3 col-md-6 contact-column">
+                    <h6 class="footer-heading">Connect With Us</h6>
+
+                    <div class="social-icons">
+
+                        <div class="contact-item">
+                            <a href="tel:8050447427">
+                                <i class="bi bi-telephone-fill"></i>
+                                <span>+91 8050447427</span></a>
+                        </div>
+
+                        <div class="contact-item">
+                            <a href="mailto:wealthkts@gmail.com">
+                                <i class="bi bi-envelope-fill"></i>
+                                <span>wealthkts@gmail.com</span></a>
+                        </div>
+
+                        <div class="contact-item">
+                            <a href="https://www.instagram.com/ktswealth">
+                                <i class="bi bi-instagram"></i>
+                                <span>@ktswealth</span></a>
+                        </div>
+
+                        <div class="contact-item">
+                            <a href="https://wa.me/918050447427">
+                                <i class="bi bi-whatsapp"></i>
+                                <span>+91 8050447427</span></a>
+                        </div>
+
+                        <div class="contact-item">
+                            <a href="https://www.google.com/maps/search/No.123,+5th+Cross,+Sapthagiri+Layout,+Doddabidrakallu,+Bangalore+-+560073">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <span>No.123, 5th Cross, Sapthagiri Layout, Doddabidrakallu, Bangalore - 560073</span></a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2026 <strong>KTS WEALTH</strong>. All Rights Reserved.
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== CONSULTATION MODAL ==================== -->
+    <div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="consultationModalLabel">
+                        <i class="bi bi-calendar-check me-2" style="color:var(--gold);"></i>Book Your Free Consultation
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="consultationForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="fullName" class="form-label">Full Name *</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phoneNumber" class="form-label">Phone Number *</label>
+                                <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter phone number" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="emailAddress" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="emailAddress" placeholder="Enter your email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="serviceInterest" class="form-label">I'm Interested In</label>
+                                <select class="form-control" id="serviceInterest">
+                                <option value="">Select an option</option>
+                                <option>Mutual Funds / SIP</option>
+                                <option>Insurance Planning</option>
+                                <option>Financial Education</option>
+                                <option>Retirement Planning</option>
+                                <option>General Consultation</option>
+                            </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="messageArea" class="form-label">Message (Optional)</label>
+                                <textarea class="form-control" id="messageArea" rows="3" placeholder="Tell us about your financial goals..."></textarea>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <button type="submit" class="btn-submit">
+                                <i class="bi bi-send-fill me-2"></i> Submit &amp; Schedule Call
+                            </button>
+                                <p class="text-muted mt-2 mb-0" style="font-size:0.78rem;text-align:center;">
+                                    <i class="bi bi-lock-fill me-1"></i> Your information is safe &amp; will never be shared.
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="formSuccessMessage" class="text-center py-4" style="display:none;">
+                        <i class="bi bi-check-circle-fill" style="font-size:3rem;color:var(--success-green);"></i>
+                        <h5 class="mt-3 fw-bold" style="color:var(--deep-navy);">Thank You!</h5>
+                        <p class="text-muted">Our advisor will call you within <strong>24 hours</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('mainNavbar');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll for anchor links (excluding modal triggers)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (!href || href === '#' || href.includes('modal')) return;
+                const targetEl = document.querySelector(href);
+                if (targetEl) {
+                    e.preventDefault();
+                    const navbarHeight = navbar.offsetHeight;
+                    const targetPosition = targetEl.getBoundingClientRect().top + window.pageYOffset - navbarHeight - 10;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    const navbarCollapse = document.getElementById('navbarContent');
+                    if (navbarCollapse.classList.contains('show')) {
+                        bootstrap.Collapse.getInstance(navbarCollapse) ? .hide();
+                    }
+                }
+            });
+        });
+
+        // (form handler moved to module script below)
+    </script>
+<script type="module">
+    import { submitConsultation } from './js/consultation-api.js';
+
+    const consultationForm = document.getElementById('consultationForm');
+    const formSuccessMessage = document.getElementById('formSuccessMessage');
+    const submitBtn = consultationForm.querySelector('.btn-submit');
+
+    let isSubmitting = false;
+
+    consultationForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        if (isSubmitting) return;
+
+        const fullName = document.getElementById('fullName').value.trim();
+        const phoneNumber = document.getElementById('phoneNumber').value.trim();
+        const emailAddress = document.getElementById('emailAddress').value;
+        const serviceInterest = document.getElementById('serviceInterest').value;
+
+        if (!fullName || !phoneNumber || !emailAddress) {
+            alert('Please fill in your name, phone number, and email.');
+            return;
+        }
+
+        if (!/^\d{10,15}$/.test(phoneNumber.replace(/[\s\-+()]/g, ''))) {
+            alert('Please enter a valid phone number (10-15 digits).');
+            return;
+        }
+
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailAddress)) {
+            alert('Please enter a valid email address.');
+            return;
+        }
+
+        isSubmitting = true;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="bi bi-hourglass-split me-2"></i> Sending...';
+
+        try {
+            console.log("Starting submission...");
+            await submitConsultation({ fullName, phoneNumber, emailAddress, serviceInterest });
+            console.log("Submission successful!");
+
+            consultationForm.style.display = 'none';
+            formSuccessMessage.style.display = 'block';
+
+            const modalEl = document.getElementById('consultationModal');
+            modalEl.addEventListener('hidden.bs.modal', function resetForm() {
+                consultationForm.style.display = 'block';
+                formSuccessMessage.style.display = 'none';
+                consultationForm.reset();
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="bi bi-send-fill me-2"></i> Submit &amp; Schedule Call';
+                modalEl.removeEventListener('hidden.bs.modal', resetForm);
+            });
+
+            setTimeout(() => {
+                const modalInstance = bootstrap.Modal.getInstance(modalEl);
+                if (modalInstance) modalInstance.hide();
+            }, 4000);
+        } catch (err) {
+            console.error("Submission failed:", err);
+            alert(err.message || 'Failed to submit your request. Please try again.');
+            isSubmitting = false;
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = '<i class="bi bi-send-fill me-2"></i> Submit &amp; Schedule Call';
+        }
+    });
+</script>
+</body>
+
+</html>
